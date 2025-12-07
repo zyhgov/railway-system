@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FiMail, FiAlertCircle, FiExternalLink } from 'react-icons/fi';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const widgetRef = useRef<HTMLDivElement>(null);
+
+  // 加载51la统计挂件
+  useEffect(() => {
+    if (widgetRef.current && !widgetRef.current.hasChildNodes()) {
+      const script = document.createElement('script');
+      script.id = 'LA-DATA-WIDGET';
+      script.crossOrigin = 'anonymous';
+      script.charset = 'UTF-8';
+      script.src = 'https://v6-widget.51.la/v6/L1tawgUcOOxIgjmU/quote.js?theme=#1690FF,#333333,#999999,#EEEEEE,#FFFFFF,#1690FF,14&f=14&display=0,0,0,0,0,0,0,1';
+      widgetRef.current.appendChild(script);
+    }
+  }, []);
 
   const quickLinks = [
     { label: '首页', path: '/' },
@@ -82,7 +95,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">官方服务热线</h3>
             <p className="text-3xl font-bold text-apple-blue mb-2">12306</p>
-            <p className="text-sm text-gray-400 mb-4">全天候为您服务</p>
+            <p className="text-sm text-gray-400 mb-4">交通强国，铁路先行</p>
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
               <FiMail />
               <span>仅供学习交流使用</span>
@@ -124,11 +137,15 @@ const Footer: React.FC = () => {
           </div>
 
           {/* 版权信息 */}
-          <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 space-y-2 md:space-y-0">
-            <p>
-              © {currentYear} 全国铁路信息查询系统 | 仅供学习交流使用 | 联合库UNHub 出品
-            </p>
-            <p className="flex items-center space-x-4">
+          <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 space-y-4 md:space-y-0">
+            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+              <p>© {currentYear} 全国铁路信息查询系统 | 仅供学习交流使用</p>
+              <span className="hidden sm:inline">|</span>
+              <p>联合库UNHub 出品</p>
+              {/* 51la 统计挂件容器 */}
+              <div ref={widgetRef} className="inline-block"></div>
+            </div>
+            <div className="flex items-center space-x-4">
               <span>本项目开源于技术学习目的</span>
               <span>·</span>
               <a 
@@ -139,7 +156,7 @@ const Footer: React.FC = () => {
               >
                 购票请访问12306官网
               </a>
-            </p>
+            </div>
           </div>
         </div>
       </div>
