@@ -1,0 +1,58 @@
+# 全国铁路信息查询系统 Robots.txt
+# https://railway.zyhorg.cn/
+
+User-agent: *
+Allow: /
+Allow: /station/
+Allow: /train/
+Allow: /route
+Allow: /display
+Allow: /statistics
+
+# 禁止爬取 API 请求
+Disallow: /api/
+
+# 网站地图
+Sitemap: https://railway.zyhorg.cn/sitemap.xml
+
+# 爬虫访问延迟（秒）
+Crawl-delay: 1
+
+# 针对主要搜索引擎的优化
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+User-agent: bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Sogou web spider
+Allow: /
+Crawl-delay: 2
+
+User-agent: 360Spider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YisouSpider
+Allow: /
+Crawl-delay: 2
+
+User-agent: Bytespider
+Allow: /
+Crawl-delay: 2
+
+# 禁止恶意爬虫
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

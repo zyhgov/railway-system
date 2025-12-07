@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- 首页 -->
+  <url>
+    <loc>https://railway.zyhorg.cn/</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- 路线查询 -->
+  <url>
+    <loc>https://railway.zyhorg.cn/route</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 车站查询 -->
+  <url>
+    <loc>https://railway.zyhorg.cn/station</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 车次查询 -->
+  <url>
+    <loc>https://railway.zyhorg.cn/train</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 候车大屏 -->
+  <url>
+    <loc>https://railway.zyhorg.cn/display</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 数据统计 -->
+  <url>
+    <loc>https://railway.zyhorg.cn/statistics</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 热门车站页面 -->
+  <url>
+    <loc>https://railway.zyhorg.cn/station/北京</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/上海</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/广州</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/深圳</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/成都</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/杭州</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/武汉</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/西安</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/南京</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/重庆</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/天津</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/苏州</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/郑州</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/长沙</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://railway.zyhorg.cn/station/青岛</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+</urlset>

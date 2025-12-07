@@ -1,0 +1,19 @@
+/* 全国铁路信息查询系统 */
+/* https://railway.zyhorg.cn */
+
+/* 团队 */
+开发者: Railway Info Team
+网站: https://railway.zyhorg.cn
+联系: info@zyhorg.cn
+
+/* 技术栈 */
+前端框架: React 18 + TypeScript
+UI框架: Tailwind CSS
+图表库: ECharts
+图标库: React Icons
+构建工具: Vite
+
+/* 声明 */
+本网站为非官方铁路信息查询平台
+仅供学习交流使用
+购票请访问 12306 官方网站

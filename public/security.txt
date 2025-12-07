@@ -1,0 +1,10 @@
+# 全国铁路信息查询系统安全联系信息
+# https://railway.zyhorg.cn/
+
+Contact: mailto:info@zyhorg.cn
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: zh-CN, en
+Canonical: https://railway.zyhorg.cn/.well-known/security.txt
+
+# 本网站为非官方铁路信息查询平台
+# 仅供学习交流使用
