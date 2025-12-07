@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FiArrowRight, FiClock, FiMapPin } from 'react-icons/fi';
+import { FiArrowRight, FiClock, FiMapPin, FiExternalLink } from 'react-icons/fi';
 import StatusBadge from './StatusBadge';
 
 interface TrainCardProps {
@@ -41,15 +40,20 @@ const TrainCard: React.FC<TrainCardProps> = ({
     return 'text-gray-600';
   };
 
+  // 点击打开新标签页
+  const handleClick = () => {
+    window.open(`/train/${trainNo}`, '_blank');
+  };
+
   return (
-    <Link
-      to={`/train/${trainNo}`}
+    <div
+      onClick={handleClick}
       className="
         block bg-white rounded-2xl p-5
         border border-gray-100
         hover:shadow-lg hover:border-apple-blue/20
         transition-all duration-300
-        group
+        group cursor-pointer
       "
     >
       <div className="flex items-center justify-between mb-4">
@@ -61,12 +65,15 @@ const TrainCard: React.FC<TrainCardProps> = ({
           <StatusBadge status={status} />
         </div>
         
-        {/* 时间 */}
-        <div className="flex items-center space-x-2 text-apple-dark">
-          <FiClock className="text-gray-400" />
-          <span className="text-xl font-semibold">
-            {formatTime(departureTime)}
-          </span>
+        {/* 时间和外链图标 */}
+        <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2 text-apple-dark">
+            <FiClock className="text-gray-400" />
+            <span className="text-xl font-semibold">
+              {formatTime(departureTime)}
+            </span>
+          </div>
+          <FiExternalLink className="text-gray-400 group-hover:text-apple-blue transition-colors" />
         </div>
       </div>
 
@@ -82,7 +89,7 @@ const TrainCard: React.FC<TrainCardProps> = ({
         <FiMapPin className="text-apple-blue" />
         <span className="text-sm">{waitingRoom}</span>
       </div>
-    </Link>
+    </div>
   );
 };
 

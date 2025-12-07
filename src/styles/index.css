@@ -200,3 +200,25 @@ select:focus {
   -webkit-background-clip: text;
   background-clip: text;
 }
+
+/* D:\railway-system\src\styles\index.css */
+
+/* 定义向下流动的动画 */
+@keyframes lineFlow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100px; /* 控制循环的距离 */
+  }
+}
+
+/* 应用于时间线的类 */
+/* 虚线流动版 */
+/* .timeline-line-animated {
+  background-image: linear-gradient(to bottom, #2ea043 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: right;
+  background-size: 2px 12px;
+  background-repeat: repeat-y;
+  animation: lineFlow 1s linear infinite;
+} */

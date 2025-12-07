@@ -31,7 +31,7 @@ export interface StopInfo {
   exit: string;
 }
 
-// 车次详情
+// 车次详情（完整版）
 export interface TrainDetail {
   车次: string;
   出发日期: string;
@@ -42,6 +42,12 @@ export interface TrainDetail {
   客运担当: string;
   车底类型: string;
   车底配属: string;
+  车辆全长?: string;
+  最高速度?: string;
+  车辆组成?: string;
+  定员?: string;
+  餐车?: string;
+  编组?: string;
   停站信息: StopInfo[];
 }
 
